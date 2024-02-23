@@ -1,0 +1,15 @@
+\\ First SELECT PROMPT
+
+SELECT C.CustomerName
+FROM Customers C
+INNER JOIN Orders O
+ON O.CustomerID = C.CustomerID
+WHERE OrderID = 10310;
+
+\\ SECOND SELECT PROMPT
+
+SELECT S.Address
+FROM Suppliers S
+INNER JOIN Products P
+ON S.SupplierID = P.SupplierID
+WHERE ProductID = 40;
